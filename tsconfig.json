@@ -1,7 +1,15 @@
 {
-    "compilerOptions": {
-        "module": "esnext",
-        "target": "esnext",
-        "moduleResolution": "bundler"
-    }
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",  // or "node16" / "node18"
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "noEmitOnError": true
+  },
+  "include": ["practice-1/**/*.ts", "practice-1/factorialWorker.js"]
 }
