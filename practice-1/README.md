@@ -13,3 +13,10 @@
 `rust-exercises`, і збережіть ваш код там.  Не забудьте, що ви маєте
 завантажити скріншоти виконання і для додаткового завдання, в доповнення до
 коду.
+
+
+# to run multi threads
+after chnages generate-keypair-worker.ts 
+compile it to js, by npx tsc <file>
+this js will be used as worker
+TODO: not clear why worker can't work with ts, is it possible?
