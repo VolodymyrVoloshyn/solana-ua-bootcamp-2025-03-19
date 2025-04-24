@@ -5,8 +5,8 @@ use anchor_lang::prelude::*;
 pub struct Offer {
     pub id: u64,
     pub maker: Pubkey,
-    pub token_min_a: Pubkey,
-    pub token_min_b: Pubkey,
+    pub token_mint_a: Pubkey,
+    pub token_mint_b: Pubkey,
     pub token_b_wanted_amount: u64,
-    pub bunp: u8,
+    pub bump: u8,
 }

@@ -78,10 +78,10 @@ pub fn save_offer(context: Context<MakeOffer>, id: u64, token_b_wanted_amount: u
     context.accounts.offer.set_inner(Offer{
         id,
         maker: context.accounts.maker.key(),
-        token_min_a: context.accounts.token_mint_a.key(),
-        token_min_b: context.accounts.token_mint_b.key(),
+        token_mint_a: context.accounts.token_mint_a.key(),
+        token_mint_b: context.accounts.token_mint_b.key(),
         token_b_wanted_amount,
-        bunp: context.bumps.offer,
+        bump: context.bumps.offer,
     });
 
     Ok(())
